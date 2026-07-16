@@ -1,0 +1,136 @@
+{
+  "summary": {
+    "total": 8,
+    "passed": 1,
+    "reviewRequired": 3,
+    "excluded": 4,
+    "avgWordCount": 1881,
+    "sitemapCandidateCount": 4
+  },
+  "pages": [
+    {
+      "relPath": "about.html",
+      "status": "REVIEW_REQUIRED",
+      "isNew": false,
+      "isPillar": true,
+      "pageType": "about",
+      "wordCount": 1363,
+      "contentHash": "6b1c927ee09a31f106e1156b3d30b86814803f1aef531f1d5f91f9f4f6667a72",
+      "failures": [],
+      "warnings": [
+        "Missing <h1>",
+        "No relevant schema for page type \"about\""
+      ],
+      "action": null
+    },
+    {
+      "relPath": "index.html",
+      "status": "REVIEW_REQUIRED",
+      "isNew": false,
+      "isPillar": true,
+      "pageType": "homepage",
+      "wordCount": 1495,
+      "contentHash": "2d80c6e3c6e40eafb9398653e6f439c2095bf84903e5ff056284c791932bb89f",
+      "failures": [],
+      "warnings": [
+        "Missing <h1>",
+        "No relevant schema for page type \"homepage\""
+      ],
+      "action": null
+    },
+    {
+      "relPath": "out/about.html",
+      "status": "EXCLUDED",
+      "isNew": false,
+      "isPillar": false,
+      "pageType": "other",
+      "wordCount": 2028,
+      "contentHash": "cc3b0e01ce1f6e71e29d93e4b790820dd7acf8dc02768625616ca453312bd5a6",
+      "failures": [
+        "Placeholder leak: src=[\"']PLACEHOLDER[\"']"
+      ],
+      "warnings": [
+        "No relevant schema for page type \"other\""
+      ],
+      "action": "restored_from_base"
+    },
+    {
+      "relPath": "out/index.html",
+      "status": "EXCLUDED",
+      "isNew": false,
+      "isPillar": false,
+      "pageType": "other",
+      "wordCount": 2088,
+      "contentHash": "0f4fa5c43805181e25d4248e56325e6ef25b4de69567f7cc8fab8940c2b30620",
+      "failures": [
+        "Placeholder leak: src=[\"']PLACEHOLDER[\"']"
+      ],
+      "warnings": [
+        "No relevant schema for page type \"other\"",
+        "No link to a pillar page (/, /services, /locations, /contact, /about)"
+      ],
+      "action": "restored_from_base"
+    },
+    {
+      "relPath": "out/locations/fake-city.html",
+      "status": "EXCLUDED",
+      "isNew": false,
+      "isPillar": false,
+      "pageType": "other",
+      "wordCount": 1739,
+      "contentHash": "c33cc47946fa97a729785a96b583785d820ac4eb0a159cc2f5401b2b6a4eafea",
+      "failures": [
+        "Placeholder leak: \\[(?:City|Service|INSERT|undefined)\\]"
+      ],
+      "warnings": [
+        "No relevant schema for page type \"other\""
+      ],
+      "action": "restored_from_base"
+    },
+    {
+      "relPath": "out/out/about.html",
+      "status": "EXCLUDED",
+      "isNew": false,
+      "isPillar": false,
+      "pageType": "other",
+      "wordCount": 1962,
+      "contentHash": "335c1d6bd43d7ec9e63a721d7f334f7fb295b9d5e48162b031a715b50dac7835",
+      "failures": [
+        "Placeholder leak: src=[\"']PLACEHOLDER[\"']"
+      ],
+      "warnings": [
+        "No relevant schema for page type \"other\"",
+        "Missing canonical tag"
+      ],
+      "action": "deleted"
+    },
+    {
+      "relPath": "out/services/consulting.html",
+      "status": "PASS",
+      "isNew": false,
+      "isPillar": false,
+      "pageType": "other",
+      "wordCount": 2041,
+      "contentHash": "e9c04faa639ea932dc09f6add72eb5e394f542d9037c740acdd047d2404b9fca",
+      "failures": [],
+      "warnings": [],
+      "action": null
+    },
+    {
+      "relPath": "out/services/professional.html",
+      "status": "REVIEW_REQUIRED",
+      "isNew": false,
+      "isPillar": false,
+      "pageType": "other",
+      "wordCount": 2333,
+      "contentHash": "79652c5251c3fef35fdf1bd3f07ba1a3a218da9819bd6c69c2e90e38c0322bad",
+      "failures": [],
+      "warnings": [
+        "Possible city-swap: only 32 unique non-proper-noun words",
+        "No relevant schema for page type \"other\"",
+        "Broken internal links (1): /services/professional/"
+      ],
+      "action": null
+    }
+  ]
+}

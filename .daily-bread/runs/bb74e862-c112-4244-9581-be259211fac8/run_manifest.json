@@ -1,0 +1,210 @@
+{
+  "runId": "bb74e862-c112-4244-9581-be259211fac8",
+  "timestamp": "2026-07-16T17:54:41.689Z",
+  "clientKey": "fixture-test",
+  "agency": "aipilots",
+  "domain": "fixture-test.com",
+  "activeCluster": "core-services",
+  "baseSha": "58e5215a0e86590fcbf941536cbc9592b07e4afa",
+  "baseBranch": "main",
+  "stagingBranch": "staging/fixture-test/core-services/2026-07-16T17-53-15-bb74e862",
+  "worktreePath": "/Users/briansmith/.daily-bread-worktree-bb74e862",
+  "serviceAreasHash": "b6affc855fd3ca201f0eafe0c5836240a95313aa09a9cc4026a3ed7c20f4ae30",
+  "routingConfigHash": "0e0dab7fc8b521ee13e36671a5553ef5b326c20f16d41869966e0d9b27f4acf6",
+  "vectorNamespace": "fixture-test__daily_bread__bb74e862-c112-4244-9581-be259211fac8",
+  "vectorPromotionStatus": "pending_external_approval",
+  "pagesPassed": [
+    {
+      "path": "out/services/consulting.html",
+      "status": "PASS",
+      "wordCount": 2041,
+      "pageType": "other",
+      "contentHash": "e9c04faa639ea932dc09f6add72eb5e394f542d9037c740acdd047d2404b9fca"
+    }
+  ],
+  "pagesReviewRequired": [
+    {
+      "path": "about.html",
+      "status": "REVIEW_REQUIRED",
+      "warnings": [
+        "Missing <h1>",
+        "No relevant schema for page type \"about\""
+      ],
+      "wordCount": 1363,
+      "pageType": "about",
+      "contentHash": "6b1c927ee09a31f106e1156b3d30b86814803f1aef531f1d5f91f9f4f6667a72"
+    },
+    {
+      "path": "index.html",
+      "status": "REVIEW_REQUIRED",
+      "warnings": [
+        "Missing <h1>",
+        "No relevant schema for page type \"homepage\""
+      ],
+      "wordCount": 1495,
+      "pageType": "homepage",
+      "contentHash": "2d80c6e3c6e40eafb9398653e6f439c2095bf84903e5ff056284c791932bb89f"
+    },
+    {
+      "path": "out/services/professional.html",
+      "status": "REVIEW_REQUIRED",
+      "warnings": [
+        "Possible city-swap: only 32 unique non-proper-noun words",
+        "No relevant schema for page type \"other\"",
+        "Broken internal links (1): /services/professional/"
+      ],
+      "wordCount": 2333,
+      "pageType": "other",
+      "contentHash": "79652c5251c3fef35fdf1bd3f07ba1a3a218da9819bd6c69c2e90e38c0322bad"
+    }
+  ],
+  "pagesExcluded": [
+    {
+      "path": "out/about.html",
+      "status": "EXCLUDED",
+      "failures": [
+        "Placeholder leak: src=[\"']PLACEHOLDER[\"']"
+      ],
+      "action": "restored_from_base",
+      "reason": "Placeholder leak: src=[\"']PLACEHOLDER[\"']"
+    },
+    {
+      "path": "out/index.html",
+      "status": "EXCLUDED",
+      "failures": [
+        "Placeholder leak: src=[\"']PLACEHOLDER[\"']"
+      ],
+      "action": "restored_from_base",
+      "reason": "Placeholder leak: src=[\"']PLACEHOLDER[\"']"
+    },
+    {
+      "path": "out/locations/fake-city.html",
+      "status": "EXCLUDED",
+      "failures": [
+        "Placeholder leak: \\[(?:City|Service|INSERT|undefined)\\]"
+      ],
+      "action": "restored_from_base",
+      "reason": "Placeholder leak: \\[(?:City|Service|INSERT|undefined)\\]"
+    },
+    {
+      "path": "out/out/about.html",
+      "status": "EXCLUDED",
+      "failures": [
+        "Placeholder leak: src=[\"']PLACEHOLDER[\"']"
+      ],
+      "action": "deleted",
+      "reason": "Placeholder leak: src=[\"']PLACEHOLDER[\"']"
+    }
+  ],
+  "sitemapCandidates": [
+    "/about.html",
+    "/",
+    "/out/services/consulting.html",
+    "/out/services/professional.html"
+  ],
+  "internalLinkCandidates": [
+    {
+      "source": "out/services/consulting.html",
+      "target": "/about"
+    },
+    {
+      "source": "out/services/professional.html",
+      "target": "/services/professional"
+    }
+  ],
+  "brokenLinksAfterReconciliation": [],
+  "finalReconciliationIssues": [],
+  "reconciledFiles": [
+    "out/services/consulting.html"
+  ],
+  "socialProofStatus": "skipped",
+  "socialProofReason": "No verified review data",
+  "reviewDataSource": "none",
+  "approvedFiles": [
+    {
+      "path": "out/services/consulting.html",
+      "changeType": "modified",
+      "contentHash": "e9c04faa639ea932dc09f6add72eb5e394f542d9037c740acdd047d2404b9fca",
+      "reason": "QA passed",
+      "relatedStage": "qa_gate"
+    },
+    {
+      "path": "about.html",
+      "changeType": "modified",
+      "contentHash": "6b1c927ee09a31f106e1156b3d30b86814803f1aef531f1d5f91f9f4f6667a72",
+      "reason": "QA review required: Missing <h1>; No relevant schema for page type \"about\"",
+      "relatedStage": "qa_gate"
+    },
+    {
+      "path": "index.html",
+      "changeType": "modified",
+      "contentHash": "2d80c6e3c6e40eafb9398653e6f439c2095bf84903e5ff056284c791932bb89f",
+      "reason": "QA review required: Missing <h1>; No relevant schema for page type \"homepage\"",
+      "relatedStage": "qa_gate"
+    },
+    {
+      "path": "out/services/professional.html",
+      "changeType": "modified",
+      "contentHash": "79652c5251c3fef35fdf1bd3f07ba1a3a218da9819bd6c69c2e90e38c0322bad",
+      "reason": "QA review required: Possible city-swap: only 32 unique non-proper-noun words; No relevant schema for page type \"other\"; Broken internal links (1): /services/professional/",
+      "relatedStage": "qa_gate"
+    },
+    {
+      "path": ".daily-bread/runs/bb74e862-c112-4244-9581-be259211fac8/run_manifest.json",
+      "changeType": "created",
+      "contentHash": "pending",
+      "reason": "Run artifact",
+      "relatedStage": "manifest_builder"
+    },
+    {
+      "path": ".daily-bread/runs/bb74e862-c112-4244-9581-be259211fac8/run_manifest.sha256",
+      "changeType": "created",
+      "contentHash": "pending",
+      "reason": "Run artifact",
+      "relatedStage": "manifest_builder"
+    },
+    {
+      "path": ".daily-bread/runs/bb74e862-c112-4244-9581-be259211fac8/qa_report.json",
+      "changeType": "created",
+      "contentHash": "pending",
+      "reason": "Run artifact",
+      "relatedStage": "manifest_builder"
+    },
+    {
+      "path": ".daily-bread/runs/bb74e862-c112-4244-9581-be259211fac8/qa_report.md",
+      "changeType": "created",
+      "contentHash": "pending",
+      "reason": "Run artifact",
+      "relatedStage": "manifest_builder"
+    },
+    {
+      "path": ".daily-bread/runs/bb74e862-c112-4244-9581-be259211fac8/pr_body.md",
+      "changeType": "created",
+      "contentHash": "pending",
+      "reason": "Run artifact",
+      "relatedStage": "manifest_builder"
+    },
+    {
+      "path": ".daily-bread/runs/bb74e862-c112-4244-9581-be259211fac8/sitemap_candidates.json",
+      "changeType": "created",
+      "contentHash": "pending",
+      "reason": "Run artifact",
+      "relatedStage": "manifest_builder"
+    },
+    {
+      "path": ".daily-bread/runs/bb74e862-c112-4244-9581-be259211fac8/excluded_report.json",
+      "changeType": "created",
+      "contentHash": "pending",
+      "reason": "Run artifact",
+      "relatedStage": "manifest_builder"
+    }
+  ],
+  "summary": {
+    "total": 8,
+    "passed": 1,
+    "reviewRequired": 3,
+    "excluded": 4,
+    "avgWordCount": 1881,
+    "sitemapCandidateCount": 4
+  }
+}
