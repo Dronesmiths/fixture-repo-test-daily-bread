@@ -1,0 +1,78 @@
+{
+  "summary": {
+    "total": 4,
+    "passed": 0,
+    "reviewRequired": 1,
+    "excluded": 3,
+    "avgWordCount": 1639,
+    "sitemapCandidateCount": 1
+  },
+  "pages": [
+    {
+      "relPath": "out/about.html",
+      "status": "EXCLUDED",
+      "isNew": false,
+      "isPillar": false,
+      "pageType": "other",
+      "wordCount": 1915,
+      "contentHash": "78acaa70ffa1fd136ca0b2e323b40ec2c7ab866c3c7cafc609a07a39a1a8ee41",
+      "failures": [
+        "Placeholder leak: src=[\"']PLACEHOLDER[\"']"
+      ],
+      "warnings": [
+        "No relevant schema for page type \"other\"",
+        "Broken internal links (2): /about/, /contact/"
+      ],
+      "action": "restored_from_base"
+    },
+    {
+      "relPath": "out/index.html",
+      "status": "EXCLUDED",
+      "isNew": false,
+      "isPillar": false,
+      "pageType": "other",
+      "wordCount": 1895,
+      "contentHash": "c56abd567ff0ae9c7cb593b9afc74275589c2d105cf9ebe602149bd9cb5049b5",
+      "failures": [
+        "Placeholder leak: src=[\"']PLACEHOLDER[\"']"
+      ],
+      "warnings": [
+        "No relevant schema for page type \"other\"",
+        "No link to a pillar page (/, /services, /locations, /contact, /about)"
+      ],
+      "action": "restored_from_base"
+    },
+    {
+      "relPath": "out/locations/fake-city.html",
+      "status": "EXCLUDED",
+      "isNew": false,
+      "isPillar": false,
+      "pageType": "other",
+      "wordCount": 1891,
+      "contentHash": "6da764224a768ce7eb83252f7093958d02fd7fe5cdf3dd4627b74372d4b8d0ff",
+      "failures": [
+        "Placeholder leak: \\[(?:City|Service|INSERT|undefined)\\]"
+      ],
+      "warnings": [
+        "No relevant schema for page type \"other\""
+      ],
+      "action": "restored_from_base"
+    },
+    {
+      "relPath": "out/services/professional.html",
+      "status": "REVIEW_REQUIRED",
+      "isNew": false,
+      "isPillar": false,
+      "pageType": "other",
+      "wordCount": 853,
+      "contentHash": "33930a62e8f6d296d11187eb33ad74bb9383ab13ea78e38bd4bd968064ca4993",
+      "failures": [],
+      "warnings": [
+        "High repetition detected: 28/66 unique sentences",
+        "No relevant schema for page type \"other\"",
+        "Broken internal links (13): /services/professional/, /contact/, /about/, /services/professional/, /services/professional/ (+8 more)"
+      ],
+      "action": null
+    }
+  ]
+}

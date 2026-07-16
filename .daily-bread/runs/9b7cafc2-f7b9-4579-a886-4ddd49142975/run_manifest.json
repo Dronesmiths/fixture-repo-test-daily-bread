@@ -1,0 +1,191 @@
+{
+  "runId": "9b7cafc2-f7b9-4579-a886-4ddd49142975",
+  "timestamp": "2026-07-16T17:24:26.608Z",
+  "clientKey": "fixture-test",
+  "agency": "aipilots",
+  "domain": "fixture-test.com",
+  "activeCluster": "core-services",
+  "baseSha": "e8fc22afe16866f0330ec022e91d7ba810262371",
+  "baseBranch": "main",
+  "stagingBranch": "staging/fixture-test/core-services/2026-07-16T17-23-57-9b7cafc2",
+  "worktreePath": "/Users/briansmith/.daily-bread-worktree-9b7cafc2",
+  "serviceAreasHash": "b6affc855fd3ca201f0eafe0c5836240a95313aa09a9cc4026a3ed7c20f4ae30",
+  "routingConfigHash": "0e0dab7fc8b521ee13e36671a5553ef5b326c20f16d41869966e0d9b27f4acf6",
+  "vectorNamespace": "fixture-test__daily_bread__9b7cafc2-f7b9-4579-a886-4ddd49142975",
+  "vectorPromotionStatus": "pending_external_approval",
+  "pagesPassed": [],
+  "pagesReviewRequired": [
+    {
+      "path": "out/services/professional.html",
+      "status": "REVIEW_REQUIRED",
+      "warnings": [
+        "High repetition detected: 28/66 unique sentences",
+        "No relevant schema for page type \"other\"",
+        "Broken internal links (13): /services/professional/, /contact/, /about/, /services/professional/, /services/professional/ (+8 more)"
+      ],
+      "wordCount": 853,
+      "pageType": "other",
+      "contentHash": "33930a62e8f6d296d11187eb33ad74bb9383ab13ea78e38bd4bd968064ca4993"
+    }
+  ],
+  "pagesExcluded": [
+    {
+      "path": "out/about.html",
+      "status": "EXCLUDED",
+      "failures": [
+        "Placeholder leak: src=[\"']PLACEHOLDER[\"']"
+      ],
+      "action": "restored_from_base",
+      "reason": "Placeholder leak: src=[\"']PLACEHOLDER[\"']"
+    },
+    {
+      "path": "out/index.html",
+      "status": "EXCLUDED",
+      "failures": [
+        "Placeholder leak: src=[\"']PLACEHOLDER[\"']"
+      ],
+      "action": "restored_from_base",
+      "reason": "Placeholder leak: src=[\"']PLACEHOLDER[\"']"
+    },
+    {
+      "path": "out/locations/fake-city.html",
+      "status": "EXCLUDED",
+      "failures": [
+        "Placeholder leak: \\[(?:City|Service|INSERT|undefined)\\]"
+      ],
+      "action": "restored_from_base",
+      "reason": "Placeholder leak: \\[(?:City|Service|INSERT|undefined)\\]"
+    }
+  ],
+  "sitemapCandidates": [
+    "/out/services/professional.html"
+  ],
+  "internalLinkCandidates": [
+    {
+      "source": "out/services/professional.html",
+      "target": "/services/professional"
+    },
+    {
+      "source": "out/services/professional.html",
+      "target": "/contact"
+    },
+    {
+      "source": "out/services/professional.html",
+      "target": "/about"
+    },
+    {
+      "source": "out/services/professional.html",
+      "target": "/services/professional"
+    },
+    {
+      "source": "out/services/professional.html",
+      "target": "/services/professional"
+    },
+    {
+      "source": "out/services/professional.html",
+      "target": "/services/professional"
+    },
+    {
+      "source": "out/services/professional.html",
+      "target": "/services/professional"
+    },
+    {
+      "source": "out/services/professional.html",
+      "target": "/services/professional"
+    },
+    {
+      "source": "out/services/professional.html",
+      "target": "/services/professional"
+    },
+    {
+      "source": "out/services/professional.html",
+      "target": "/services/professional"
+    },
+    {
+      "source": "out/services/professional.html",
+      "target": "/services/professional"
+    },
+    {
+      "source": "out/services/professional.html",
+      "target": "/services/professional"
+    },
+    {
+      "source": "out/services/professional.html",
+      "target": "/services/professional"
+    }
+  ],
+  "brokenLinksAfterReconciliation": [
+    "out/services/professional.html → /contact"
+  ],
+  "finalReconciliationIssues": [],
+  "reconciledFiles": [],
+  "socialProofStatus": "skipped",
+  "socialProofReason": "No verified review data",
+  "reviewDataSource": "none",
+  "approvedFiles": [
+    {
+      "path": "out/services/professional.html",
+      "changeType": "modified",
+      "contentHash": "33930a62e8f6d296d11187eb33ad74bb9383ab13ea78e38bd4bd968064ca4993",
+      "reason": "QA review required: High repetition detected: 28/66 unique sentences; No relevant schema for page type \"other\"; Broken internal links (13): /services/professional/, /contact/, /about/, /services/professional/, /services/professional/ (+8 more)",
+      "relatedStage": "qa_gate"
+    },
+    {
+      "path": ".daily-bread/runs/9b7cafc2-f7b9-4579-a886-4ddd49142975/run_manifest.json",
+      "changeType": "created",
+      "contentHash": "pending",
+      "reason": "Run artifact",
+      "relatedStage": "manifest_builder"
+    },
+    {
+      "path": ".daily-bread/runs/9b7cafc2-f7b9-4579-a886-4ddd49142975/run_manifest.sha256",
+      "changeType": "created",
+      "contentHash": "pending",
+      "reason": "Run artifact",
+      "relatedStage": "manifest_builder"
+    },
+    {
+      "path": ".daily-bread/runs/9b7cafc2-f7b9-4579-a886-4ddd49142975/qa_report.json",
+      "changeType": "created",
+      "contentHash": "pending",
+      "reason": "Run artifact",
+      "relatedStage": "manifest_builder"
+    },
+    {
+      "path": ".daily-bread/runs/9b7cafc2-f7b9-4579-a886-4ddd49142975/qa_report.md",
+      "changeType": "created",
+      "contentHash": "pending",
+      "reason": "Run artifact",
+      "relatedStage": "manifest_builder"
+    },
+    {
+      "path": ".daily-bread/runs/9b7cafc2-f7b9-4579-a886-4ddd49142975/pr_body.md",
+      "changeType": "created",
+      "contentHash": "pending",
+      "reason": "Run artifact",
+      "relatedStage": "manifest_builder"
+    },
+    {
+      "path": ".daily-bread/runs/9b7cafc2-f7b9-4579-a886-4ddd49142975/sitemap_candidates.json",
+      "changeType": "created",
+      "contentHash": "pending",
+      "reason": "Run artifact",
+      "relatedStage": "manifest_builder"
+    },
+    {
+      "path": ".daily-bread/runs/9b7cafc2-f7b9-4579-a886-4ddd49142975/excluded_report.json",
+      "changeType": "created",
+      "contentHash": "pending",
+      "reason": "Run artifact",
+      "relatedStage": "manifest_builder"
+    }
+  ],
+  "summary": {
+    "total": 4,
+    "passed": 0,
+    "reviewRequired": 1,
+    "excluded": 3,
+    "avgWordCount": 1639,
+    "sitemapCandidateCount": 1
+  }
+}
