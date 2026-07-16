@@ -1,0 +1,15 @@
+{
+  "client": "Fixture Test Client",
+  "domain": "fixture-test.com",
+  "clusters": [
+    {
+      "name": "core-services",
+      "status": "approved",
+      "services": {
+        "service-a": {
+          "locations": ["city-a"]
+        }
+      }
+    }
+  ]
+}
